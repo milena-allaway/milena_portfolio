@@ -15,3 +15,6 @@ https://www.w3schools.com/ provided guidance on flex display and hover/link effe
 freecodecamp.org was used to write the code to make images clickable links.
 https://placekitten.com/ was used for placeholder images of adorable kittens.
 The CSS Reset file was provided as class material, the full file can be found at https://meyerweb.com/eric/tools/css/reset/
+
+## License
+MIT License
