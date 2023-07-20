@@ -1,17 +1,29 @@
+:root {
+    --seriffont: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --mainfontcolor: #514353;
+    --white: #fff;
+    --borderleft: 3px solid #514353;
+    --mainbackground: #f1e6f5;
+    --mediumgrey: #8e8090;
+    --projectsborder: 5px solid #fff;
+    --linkpurple: #980ba8;
+    --boxshadow: 0 3px 3px #8e8090;
+}
+
 *{
     box-sizing: border-box;
 }
 
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--seriffont);
 }
 
 header {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--seriffont);
     padding: 20px;
     text-align: left;
     background: #eed4f5 ;
-    color: #514353;
+    color: var(--mainfontcolor);
 }
 
 h1 {
@@ -27,11 +39,11 @@ a:link {
 }
 
 a:visited {
-    color: #980ba8;
+    color: var(--linkpurple);
 }
 
 a:hover {
-    color: #fff;
+    color: var(--white);
 }
 
 #p_header {
@@ -46,111 +58,108 @@ nav {
 }
 
 nav a {
-    color: #514353;
+    color: var(--mainfontcolor);
     padding: 10px 15px;
     text-decoration: none;
     text-align: center;
 }
 
-div {
+main div {
+    display: flex;
     flex-direction: column;
     align-content: flex-start;
-    background-color: #f1e6f5;
+    background-color: var(--mainbackground);
     padding: 10px;
-    color:#514353;
+    color:var(--mainfontcolor);
 }
-
+/*section headers*/
 .sidetext {
     text-align: left;
 }
 
 .selfie {
-    padding: 10px;
+    padding: 0px;
     max-width: 300px;
+    border: var(--projectsborder);
 }   
-
+/*bio content*/
 .text {
     justify-content: center;
     font-size: 16px;
     padding: 10px;
 }
-
+/*line up about me section with rest of page*/
 .aboutme {
     margin-left: 190px;
 }
-
+/*main content container settings*/
 section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border-left: 3px solid #514353;
-    background-color:#f1e6f5 ;
-    color: #514353;
+    border-left: var(--borderleft);
+    background-color:var(--mainbackground) ;
+    color: var(--mainfontcolor);
     margin-left: 180px;
 }
-
+/*flex of images*/
 section img{
     flex: auto;
     width:100%;
 }
-
+/*project headings*/
 h3 {
-    background-color: #fff;
-    color: #514353;
+    background-color: var(--white);
+    color: var(--mainfontcolor);
     font-size: 20px;
 }
-
+/*bootcamp prework project container*/
 .projects1 {
     text-align: center;
     padding: 0px;
     margin: 10px;
-    border: 3px solid #fff;
+    border: var(--projectsborder);
     border-radius: 10px;
-    box-shadow: 0 3px 3px #8e8090;
+    box-shadow: var(--boxshadow);
 }
-
+/*all other projects containers*/
 .projects {
     text-align: center;
     max-width: 300px;
     margin-left: 200px;
     margin: 10px;
     padding: 0px;
-    border: 3px solid #fff;
+    border: var(--projectsborder);
     border-radius: 10px;
-    box-shadow: 0 3px 3px #8e8090
+    box-shadow: var(--boxshadow);
 }
-
+/*hover for projects*/
 #imghover:hover {
-    border: 5px solid #980ba8;
+    border: 5px solid var(--linkpurple);
 }
-
-.contact {
-    display: flex;
-    flex-wrap: wrap;
-    border-left: 3px solid #514353;
+/*contact me container*/
+.contactme {
+    border-left: var(--borderleft);
     margin-left: 180px;
 }
-
-.contactinfo {
-    border-left: 3px #514353;
-    font-size: 20px;
-    margin-top: 10px;
-    align-content: flex-start;
-} 
-
-#email, #phone {
+/*remove underline from email link*/
+a {
     text-decoration: none;
-    color: #514353;
-    font-weight: bolder;
-    padding: 10px;
 }
 
+.contact_text {
+    color: var(--mainfontcolor);
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 10px;
+    max-width: 400px;
+}
 
 footer {
     padding: 40px;
     text-align: center;
     font-size: 30px;
-    background: #8e8090;
-    color: #f1e6f5;
+    background: var(--mediumgrey);
+    color: var(--mainbackground);
 }
     
