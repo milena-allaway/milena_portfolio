@@ -6,7 +6,7 @@ This is my online portfolio. It's only just the beginning, and will evolve along
 ## Usage
 When you visit https://milena-allaway.github.io/milena_portfolio/ you will see an online portfolio that looks like this:
 
-<a img src=""C:\Users\milen\projects\portfolio_project\milena_portfolio\assets\images\portfolio_screenshot.png"></a>
+<img src="C:\Users\milen\projects\portfolio_project\milena_portfolio\assets\images\portfolio_screenshot.png">
 
 When you click on the links in the navigation bar, you will be directed to the corresponding content on the page. In the "projects" section you will see some of the web applications I have worked on, with clickable images that will open the web application in a new browser window. At the bottom there is information on how to contact me, with a clickable email link.
 
